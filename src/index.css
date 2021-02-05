@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap');
+
+body{
+    background-image: linear-gradient(#000000,#434343);
+    background-attachment: fixed;
+    color: #354538;
+}
+.app__container{
+    padding-top: 50px;
+    
+}
+.app__row{
+    height: 86vh;
+}
+a{
+    text-decoration: none;
+    color:#354538 ;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.app__main-content{
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+}
+.sidebar{
+    background-color:#ffff;
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+.sidebar__avtar{
+    height:120px;
+    width:120px;
+    object-fit:contain;
+    border-radius:30px;
+}
+.sidebar_icon{
+    width:25px;
+    height:25px;
+}
+.sidebar__name{
+    font-family: 'Kaushan Script';
+    margin:20px 0 ;
+    font-size: 1.7rem;
+}
+.sidebar__item{
+    margin-bottom: 6px;
+    padding-top: 6px;
+    height:40px;
+    font-size: 1.05rem;
+    border-radius: 30px;
+}
+.sidebar__title{
+    background-color: darkgray;
+    border-radius: 30px;
+}
+.sidebar_contact{
+    background-color: #dbdbdd;
+    padding: 2px 0;
+    margin: 20px -15px;
+}
+.sidebar__email{
+    background-image: linear-gradient(#01141a93,#311212);
+    border-radius: 30px;
+    color: #ffff;
+    margin: 15px 25px 0;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+.sidebar__email:hover{
+    transform: scale(1.02);
+}
+
+.sidebar__github:hover,
+.sidebar__resume:hover,
+.resume:hover{
+    background-color: #f1f1f1;
+    color: #000;
+    
+}
+@media(max-width:991px){
+    .app__main-content{
+        margin: 30px 0;
+    }
+}
+
+/* navbar */
+.navbar__items{
+    display: flex;
+}
+.navbar__active{
+    font-size: 2rem;
+    font-weight:700 ;
+    color: #354335;
+    border-bottom: 4px solid #00f260;
+
+}
+.navbar__item{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #354335;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.navbar__item:hover{
+    background: -webkit-linear-gradient(#00f260, #0575e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.about{
+    padding: 10px;
+    margin: -25px;
+}
+.about__intro{ 
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px 0;
+}
+.about__container{
+    background-color: #f1f1f1;
+    padding:20px 20px;
+    border-radius: 30px;
+}
+.about__heading{
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 700;
+    color:#2a2a38;
+    margin-left: 10px;
+    
+}
+.skill-card{
+    background-color: #ffff;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.skill-card__icon{
+    width: 40px;
+    height: 40px;
+}
+.skill-card-body{
+    margin-left: 15px;
+}
+.skill_card__content{
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6e7391;
+    border-radius: 30px;
+}
+/* resume */
+
+.resume__ {
+    padding-top: 20px;
+    /* background-color: #ffff; */
+}
+
+.resume-card__heading,
+.reume-language__heading {
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+}
+
+.resume-card__body {
+    margin-top: 10px;
+}
+
+.resume-card__title {
+    font-weight: 700;
+}
+
+.resume-card__name {
+    font-size: 16px;
+}
+
+.resume-card__details {
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
+/* bar */
+.bar {
+    width: 90%;
+    background-color:#f1f1f1;
+    border-radius: 20px;
+    margin-bottom: 12px;
+
+}
+
+.bar__icon {
+    width: 15px;
+    height: 15px;
+}
+
+.bar__wrapper {
+    background-image: linear-gradient(90deg, #00F260, #0575E6);
+    border-radius: 20px;
+    padding: 4px 14px;
+    color: #fff;
+    font-size: 0.9rem
+}
+/* projects */
+.projects {
+    height: 70vh;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.projectCard__wrapper {
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+}
+
+.projectCard__image {
+    width: 100%;
+    height: 80%;
+    border-radius: 30px;
+    border: 1px solid #00F260;
+    transition: transform 0.3s linear;
+}
+
+.projectCard__image:hover {
+    transform: scale(1.05);
+}
+
+.projectCard__icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.projectCard__title {
+    margin-top: 12px;
+    font: size 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects__navbar {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.projects__navbar>div {
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
